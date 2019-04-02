@@ -1,22 +1,7 @@
-Embedded Jasper Reports Examples
-=============
+Steps to run the project:
 
-### Some examples:
+Just run the SimpleReporter.java file as java application.
 
-- [Simple](src/main/java/com/bchetty/reporting/jasper/main/SimpleReporter.java)
+Jasper reports will be generated in reports folder.
 
-- [Content from database](src/main/java/com/bchetty/reporting/jasper/main/DatabaseReporter.java)
-
-- [Gant chart](src/main/java/com/bchetty/reporting/jasper/main/GanttReporter.java)
-
-- [Thermometer](src/main/java/com/bchetty/reporting/jasper/main/ThermoReporter.java)
-
-### References
-
-- http://community.jaspersoft.com/wiki/datasources
-
-- http://jasperreports.sourceforge.net/sample.reference/datasource
-
-- http://www.developer.com/java/how-to-create-database-reports-through-jasperreport.html
-
-- https://github.com/brettwooldridge/HikariCP
+If it is already there , delete and run the SimpleReporter.java again.
