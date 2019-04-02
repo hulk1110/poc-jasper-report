@@ -1,7 +1,8 @@
-package com.bchetty.reporting.jasper.main;
+package com.anz.jasper.main;
 
-import com.bchetty.reporting.jasper.business.SimpleBeanMaker;
-import com.bchetty.reporting.jasper.data.SimpleBean;
+import com.anz.jasper.business.SimpleBeanMaker;
+import com.anz.jasper.data.SimpleBean;
+
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ import net.sf.jasperreports.engine.xml.JRXmlLoader;
 /**
  * Simple Report Generator.
  * 
- * @author Babji Prashanth, Chetty
+ * @author Nishant
  */
 public class SimpleReporter {
     /**

@@ -1,7 +1,7 @@
-package com.bchetty.reporting.jasper.data;
+package com.anz.jasper.data;
 
 /*
- * @author Babji P, Chetty
+ * @author Nishant
  */
 public class SimpleBean {
     private String name;

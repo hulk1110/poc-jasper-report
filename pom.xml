@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.bchetty</groupId>
-    <artifactId>jasperSamples</artifactId>
+    <artifactId>pocOnJasperDemo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>jasperSamples</name>
+    <name>pocOnJasperDemo</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -29,17 +29,20 @@
     </repositories>
 
     <dependencies>
+    <!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+<dependency>
+    <groupId>com.lowagie</groupId>
+    <artifactId>itext</artifactId>
+    <version>2.1.7</version>
+</dependency>
+    
         <dependency>
             <groupId>net.sf.jasperreports</groupId>
             <artifactId>jasperreports</artifactId>
             <version>${jasperreports.version}</version>
         </dependency>
         
-        <dependency>
-            <groupId>net.sf.jasperreports</groupId>
-            <artifactId>jasperreports-chart-themes</artifactId>
-            <version>${jasperreports.version}</version>
-        </dependency>
+        
 
         <dependency>
             <groupId>org.springframework</groupId>
