@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="sampleDynamicJasperDesign" pageWidth="595" pageHeight="842" columnWidth="515" leftMargin="40" rightMargin="40" topMargin="20" bottomMargin="20" uuid="f6525a83-6266-4c65-b19b-e8974a462453">
+	<style name="Sans_Normal" isDefault="true" fontName="DejaVu Sans" fontSize="12" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+	<field name="firstName" class="java.lang.String"/>
+	<field name="lastName" class="java.lang.String"/>
+	<field name="age" class="java.lang.Integer"/>
+	<title>
+		<band height="30">
+			<staticText>
+				<reportElement x="0" y="0" width="515" height="20" uuid="33c2fe57-3d87-4057-b6e0-f7eefc14abb1"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Person's Specification]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="20">
+			<textField>
+				<reportElement x="0" y="0" width="160" height="20" uuid="a1bf44d8-97fb-48ee-abe4-0d15f3b0d8fc"/>
+				<textFieldExpression><![CDATA["First Name: "+$F{firstName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="160" y="0" width="160" height="20" uuid="b13594b0-f243-44a2-b628-f7f9c3ee1869"/>
+				<textFieldExpression><![CDATA[$F{lastName}+" :Last Name"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="160" height="20" uuid="9319ca54-0b8b-4d57-ae5c-eab44a70549c"/>
+				<textElement markup="html"/>
+				<textFieldExpression><![CDATA["<html><font color=\"#66FF33\">"+"Age is: "+"</font><font color=\"#6600FF\">"+$F{age}+"</font></html>"]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
